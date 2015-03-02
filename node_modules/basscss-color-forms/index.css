@@ -1,0 +1,77 @@
+/* Basscss Color Forms */
+
+.field-light {
+  background-color: white;
+  transition: box-shadow .2s ease;
+  border-style: solid;
+  border-width: var(--border-width);
+  border-color: var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+.field-light:focus {
+  outline: none;
+  border-color: var(--blue);
+  box-shadow: 0 0 2px rgba(var(--blue),.5);
+}
+
+.field-light:disabled {
+  color: var(--mid-gray);
+  background-color: var(--darken-2);
+}
+
+.field-light:read-only:not(select) {
+  background-color: var(--darken-2);
+}
+
+.field-light:invalid {
+  border-color: var(--red);
+}
+
+.field-light.is-success {
+  border-color: var(--green);
+}
+
+.field-light.is-warning {
+  border-color: var(--yellow);
+}
+
+.field-light.is-error {
+  border-color: var(--red);
+}
+
+
+.radio-light,
+.checkbox-light {
+  transition: box-shadow .2s ease;
+}
+
+.radio-light {
+  border-radius: 50%;
+}
+  
+.radio-light:focus,
+.checkbox-light:focus {
+  outline: none;
+  box-shadow: 0 0 2px rgba(var(--blue),.5);
+}
+
+:root {
+  --blue: #0076df;
+  --red: #f95020;
+  --green: #00cf26;
+  --yellow: #efcc00;
+  --dark-gray: #333;
+  --mid-gray: #777;
+  --light-gray: #ccc;
+  --lighter-gray: #eee;
+  --darken-1: rgba(#000,.0625);
+  --darken-2: rgba(#000,.125);
+  --darken-3: rgba(#000,.25);
+  --darken-4: rgba(#000,.5);
+  --border-color: var(--light-gray);
+  --border-width: 1px;
+  --border-radius: 3px;
+}
+
+

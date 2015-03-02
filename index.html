@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Paz - Continuous deployment for production environments</title>
+  <meta title="description" content="">
+  <meta title="author" content="">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/base.min.css">
+  <script src="//use.typekit.net/juw6rni.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+
+  <header class="gradient-blue-pink white">
+    <div class="container py4 px2">
+      <nav class="clearfix flex flex-stretch mb2">
+        <div class="flex-center flex-auto flex">
+          <img src="img/logo-small.svg" alt="">
+        </div>
+        <div class="flex-center flex">
+          <!-- <a class="py2 button button&#45;transparent button&#45;no&#45;click strikethrough" href="">Documentation</a> -->
+          <a class="py2 button button-transparent" href="https://github.com/yldio/paz">GitHub</a>
+          <!-- <a class="py2 button button&#45;outline strikethrough button&#45;no&#45;click" href="">Demo</a> -->
+        </div>
+      </nav>
+      <div class="clearfix">
+        <div class="col sm-col-8 lg-col-6">
+          <h1 class="mb3">Continuous deployment for production environments; built on Docker, CoreOS, etcd and fleet.</h1>
+          <p class="h3 mb3">Paz is an in-house service platform<br>with a PaaS-like workflow.</p>
+          <div class="clearfix">
+            <div class="col">
+              <a href="#" class="button button-outline mb1">Demo coming soon…</a>
+              <p class="center">or <a class="white" href="https://github.com/yldio/paz">clone on GitHub</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="img/modules.svg" alt="" class="mx-auto block">
+  </header>
+  <div class="gray">
+    <div class="container px2 py4">
+      <div class="clearfix mxn2">
+        <h2 class="h1 ml2 mt0 black">Components</h2>
+        <div class="sm-col sm-col-6 lg-col-4 px2 mb2">
+          <h3><a class="black" href="https://github.com/yldio/paz-service-directory">Service Directory</a></h3>
+          <p>A catalog of your services and their configuration (e.g. environment variables, data volumes, port mappings and number of instances to launch).</p>
+        </div>
+        <div class="sm-col sm-col-6 lg-col-4 px2 mb2">
+          <h3><a class="black" href="https://github.com/yldio/paz-scheduler">Scheduler</a></h3>
+          <p>Scheduler receives HTTP POST commands to deploy services that are defined in the service directory. A history of deployments and associated configurations is also available from the scheduler.</p>
+        </div>
+        <div class="sm-col sm-col-6 lg-col-4 px2 mb2">
+          <h3><a class="black" href="https://github.com/yldio/paz-orchestrator">Orchestrator</a></h3>
+          <p>Orchestrator ties all of the other services together, providing a single access-point for the front-end to interface with. Also offers a web socket endpoint for realtime updates to the web front-end.</p>
+        </div>
+        <div class="sm-col sm-col-6 lg-col-4 px2 mb2">
+          <h3><a class="black" href="https://github.com/yldio/paz-web">Web Front End</a></h3>
+          <p>A beautiful and easy-to-use web UI for managing your services and observing the health of your cluster. Proudly built with Ember.</p>
+        </div>
+        <div class="sm-col sm-col-6 lg-col-4 px2 mb2">
+          <h3><a class="black" href="https://github.com/yldio/paz-haproxy">HAProxy</a></h3>
+          <p>Paz uses Confd to dynamically configure HAProxy based on service availability information declared in Etcd. HAProxy is configured to route external external and internal requests to the correct host for the desired service.</p>
+        </div>
+        <div class="sm-col sm-col-6 lg-col-4 px2 mb2">
+          <h3 class="black">Monitoring and Logging</h3>
+          <p>Currently cAdvisor is used for monitoring, and there is not yet any centralised logging. Monitoring and logging are high-priority features on the roadmap.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container px2">
+      <img src="img/screenshot@2x.png" alt="" class="mbn4 mx-auto">
+    </div>
+  </div>
+
+
+  <div class="gradient-blue-pink white">
+    <div class="container py4 px2">
+      <div class="clearfix mt4">
+        <div class="sm-col sm-col-4">
+          <h2 class="h1 mt0 mb3">Presentations & screencasts</h2>
+          <div class="clearfix p2 mxn2 mb1 bg-white-translucent rounded border border-white">
+            <div class="left mr2">
+              <img src="http://img.youtube.com/vi/Zve7rJ1FoDU/0.jpg" alt="" width=75 class="block rounded">
+            </div>
+            <div class="overflow-hidden">
+              <p class="bold mb0">Container Camp</p>
+              <p class="mb0">September 2014</p>
+            </div>
+          </div>
+        </div>
+        <div class="sm-col sm-col-8">
+          <div class="media-16-by-9 shadow rounded">
+            <iframe src="https://www.youtube.com/embed/Zve7rJ1FoDU?modestbranding=1&autohide=1&showinfo=0&controls=1" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div>
+    <div class="container px2 py4">
+      <div class="clearfix mxn2">
+        <div class="sm-col sm-col-6 px2">
+          <h2 class="h1 mt0">Contributors & Crafters</h2>
+          <p>Paz is made & maintained by a bunch of awesome people, from YLD and the internet.</p>
+          <a class="button button-outline mb2" href="https://github.com/yldio/paz/issues/19">View Roadmap & contribute</a>
+        </div>
+        <div class="sm-col sm-col-6 px2">
+          <div class="clearfix">
+            <div class="col col-4 px2 mb3 mx0">
+              <img class="rounded" src="https://avatars3.githubusercontent.com/u/3177600?v=3&s=460" alt="">
+              <figcaption class="center"><a class="black" href="http://github.com/lukebond">Luke Bond</a></figcaption>
+            </div>
+            <div class="col col-4 px2 mb3 mx0">
+              <img class="rounded" src="https://avatars1.githubusercontent.com/u/524382?v=3&s=460" alt="">
+              <figcaption class="center"><a class="black" href="http://github.com/tomgco">Tom Gallacher</a></figcaption>
+            </div>
+            <div class="col col-4 px2 mb3 mx0">
+              <img class="rounded" src="https://avatars3.githubusercontent.com/u/815831?v=3&s=460" alt="">
+              <figcaption class="center"><a class="black" href="https://github.com/bananaoomarang">Milo Mordaunt</a></figcaption>
+            </div>
+            <div class="col col-4 px2 mb3 mx0">
+              <img class="rounded" src="https://avatars2.githubusercontent.com/u/134117?v=3&s=460" alt="">
+              <figcaption class="center"><a class="black" href="https://github.com/sublimino">Andrew Martin</a></figcaption>
+            </div>
+            <div class="col col-4 px2 mb3 mx0">
+              <img class="rounded" src="https://avatars0.githubusercontent.com/u/591643?v=3&s=460" alt="">
+              <figcaption class="center"><a class="black" href="https://github.com/jongold">Jon Gold</a></figcaption>
+            </div>
+            <div class="col col-4 px2 mb3 mx0">
+              <img class="rounded" src="https://avatars2.githubusercontent.com/u/2507889?v=3&s=460" alt="">
+              <figcaption class="center"><a class="black" href="http://github.com/joaquimserafim">Joaquim Serafim</a></figcaption>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.min.js"></script>
+</body>
+</html>

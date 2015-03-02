@@ -1,0 +1,61 @@
+{
+  "name": "bassplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for Basscss with Gulp, Rework, and Browserify",
+  "author": "Brent Jackson",
+  "license": "MIT",
+  "dependencies": {
+    "basscss-background-images": "latest",
+    "basscss-base-buttons": "latest",
+    "basscss-base-forms": "latest",
+    "basscss-base-reset": "latest",
+    "basscss-base-tables": "latest",
+    "basscss-base-typography": "latest",
+    "basscss-button-outline": "latest",
+    "basscss-button-transparent": "latest",
+    "basscss-color-base": "latest",
+    "basscss-color-borders": "latest",
+    "basscss-color-buttons": "latest",
+    "basscss-color-forms": "latest",
+    "basscss-color-forms-dark": "latest",
+    "basscss-input-range": "latest",
+    "basscss-color-tables": "latest",
+    "basscss-colors": "latest",
+    "basscss-defaults": "latest",
+    "basscss-grid": "latest",
+    "basscss-positions": "latest",
+    "basscss-table-object": "latest",
+    "basscss-ui-utility-button-sizes": "latest",
+    "basscss-ui-utility-groups": "latest",
+    "basscss-utility-layout": "latest",
+    "basscss-utility-responsive-states": "latest",
+    "basscss-utility-typography": "latest",
+    "basscss-utility-white-space": "latest",
+    "flex-object": "latest"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-basswork": "^0.1.0",
+    "gulp-minify-css": "^0.3.11",
+    "gulp-rename": "^1.2.0",
+    "gulp-webserver": "^0.8.7"
+  },
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jxnblk/bassplate.git"
+  },
+  "keywords": [
+    "CSS",
+    "OOCSS",
+    "Basscss",
+    "Gulp",
+    "Boilerplate"
+  ],
+  "bugs": {
+    "url": "https://github.com/jxnblk/bassplate/issues"
+  },
+  "homepage": "https://github.com/jxnblk/bassplate"
+}

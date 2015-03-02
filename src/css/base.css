@@ -1,0 +1,172 @@
+/*
+ * Basscss Base
+ *
+ * Remove or comment out unneeded modules and import your own files.
+ * Adjust global media queries and variables below.
+ *
+ */
+
+
+/* Basscss Modules */
+@import 'basscss-base-reset';
+@import 'basscss-base-forms';
+@import 'basscss-base-buttons';
+@import 'basscss-base-tables';
+@import 'basscss-base-typography';
+
+@import 'basscss-utility-layout';
+@import 'basscss-utility-typography';
+@import 'basscss-utility-white-space';
+@import 'basscss-utility-responsive-states';
+@import 'basscss-positions';
+@import 'basscss-ui-utility-button-sizes';
+
+@import 'basscss-grid';
+@import 'flex-object';
+
+@import 'basscss-color-base';
+@import 'basscss-color-forms';
+@import 'basscss-color-forms-dark';
+@import 'basscss-input-range';
+@import 'basscss-color-tables';
+
+@import 'basscss-button-outline';
+@import 'basscss-button-transparent';
+@import 'basscss-background-images';
+@import 'basscss-color-borders';
+@import 'basscss-colors';
+
+@import 'basscss-defaults';
+
+/* Example custom file import */
+@import './color/borders';
+
+
+/* Custom media queries */
+@custom-media --breakpoint-sm (min-width: 40em);
+@custom-media --breakpoint-md (min-width: 52em);
+@custom-media --breakpoint-lg (min-width: 64em);
+
+html {
+  font-size: 0.875em;
+}
+
+/* Variables */
+:root {
+
+  --font-family: 'aktiv-grotesk-std', 'Helvetica Neue', Helvetica, sans-serif;
+  --line-height: 1.5;
+  --heading-font-family: var(--font-family);
+  --heading-font-weight: 300;
+  --heading-line-height: 1.25;
+  --monospace-font-family: 'Source Code Pro', Consolas, monospace;
+
+  --h1: 2rem;
+  --h2: 1.5rem;
+  --h3: 1.25rem;
+  --h4: 1rem;
+  --h5: .875rem;
+  --h6: .75rem;
+
+  --bold-font-weight: bold;
+
+  --space-1: .5rem;
+  --space-2: 1rem;
+  --space-3: 2rem;
+  --space-4: 4rem;
+
+  --form-field-font-size: 1rem;
+  --form-field-height: 2.25rem;
+  --form-field-padding-y: .5rem;
+  --form-field-padding-x: .5rem;
+
+  --button-font-size: inherit;
+  --button-font-weight: 500;
+  --button-line-height: 1.125rem;
+  --button-padding-y: 1rem;
+  --button-padding-x: 2rem;
+
+  /* Grid container max-width */
+  --container-width: 64em;
+
+  /* Colors */
+
+  --black: #73889A;
+  --gray:   #B8C3CC;
+  --silver: #ddd;
+  --white:  #fff;
+
+  --aqua:   #7fdbff;
+  --blue:   #0074d9;
+  --navy:   #001f3f;
+  --teal:   #39cccc;
+  --green:  #2ecc40;
+  --olive:  #3d9970;
+  --lime:   #01ff70;
+
+  --yellow: #ffdc00;
+  --orange: #ff851b;
+  --red:    #ff4136;
+  --fuchsia:#f012be;
+  --purple: #b10dc9;
+  --maroon: #85144b;
+
+  --darken-1: rgba(#000,.0625);
+  --darken-2: rgba(#000,.125);
+  --darken-3: rgba(#000,.25);
+  --darken-4: rgba(#000,.5);
+
+  --border-color: var(--darken-2);
+  --border-width: 1px;
+  --border-radius: 3px;
+
+}
+
+.outline-blue * {
+  box-shadow: 0 0 0 1px rgba(0,116,217,.75)
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.button-no-click {
+  cursor: not-allowed;
+}
+
+.media-16-by-9 {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.media-16-by-9 iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gradient-blue-pink {
+  background-image: linear-gradient(#D59FFF 0%, #48DEEE 100%);
+  background-image: linear-gradient(180deg, #7B37D7 0%, #48DEEE 100%);
+}
+
+.rounded {
+  overflow: hidden;
+}
+
+.shadow {
+  box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.15);
+}
+
+.bg-white-translucent {
+  background: rgba(255,255,255,.2);
+}
+
+.mbn4 { margin-bottom: -var(--space-4); }
+
+.hero-bg {
+  background-image: url('../img/modules.png') bottom center repeat-x;
+}
