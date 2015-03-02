@@ -170,3 +170,18 @@ html {
 .hero-bg {
   background-image: url('../img/modules.png') bottom center repeat-x;
 }
+
+@media (--breakpoint-sm) {
+  .sm-half:nth-child(2n+2) {
+    clear: both;
+  }
+}
+
+@media (--breakpoint-lg) {
+  .sm-half:nth-child(2n+2) {
+    clear: none;
+  }
+  .lg-third:nth-child(3n+2) {
+    clear: both;
+  }
+}
