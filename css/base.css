@@ -1852,6 +1852,7 @@ input[type=range] {
 
 html {
   font-size: 0.875em;
+  font-weight: 300;
 }
 
 /* Variables */
