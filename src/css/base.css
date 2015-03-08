@@ -166,6 +166,10 @@ html {
   background: rgba(255,255,255,.2);
 }
 
+.border-transparent {
+  border-color: transparent;
+}
+
 .mbn4 { margin-bottom: -var(--space-4); }
 
 .hero-bg {
